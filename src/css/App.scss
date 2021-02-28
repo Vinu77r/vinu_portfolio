@@ -11,6 +11,17 @@ $primary_text: #5f6a85;
 $vr: ".vr";
 $vri: ".vri";
 
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 40px !important;
+  }
+  #{$vr}-header {
+    &-nav {
+      display: none;
+    }
+  }
+}
+
 body {
   padding: 0;
   background-color: $body-bg;
@@ -116,6 +127,7 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
+    margin-right: 70px;
     flex: 1;
   }
   &-list {
