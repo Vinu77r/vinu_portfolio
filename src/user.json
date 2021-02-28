@@ -1,0 +1,93 @@
+[
+  {
+    "About": [
+      {
+        "title": "Hello",
+        "userName": "Vinu",
+        "jobTitle": "UI Engineer",
+        "aboutUser": "I'm a UI Engineer with 4+ years of experience who loves design, code, and coffee. I have a passion for crafting human-computer interaction and believe in building easy-to-maintain websites/apps by breaking them down into its smallest components. "
+      }
+    ]
+  },
+  {
+    "Skills": [
+      {
+        "Area": "Developement skills",
+        "SkillSet": [
+          {
+            "iconURL": "",
+            "SkillName": "HTML/HTML5"
+          },
+          {
+            "iconURL": "",
+            "SkillName": "CSS/CSS3"
+          },
+          {
+            "iconURL": "",
+            "SkillName": "JavaScript"
+          },
+          {
+            "iconURL": "",
+            "SkillName": "Sassy CSS"
+          },
+          {
+            "iconURL": "",
+            "SkillName": "React.js"
+          },
+          {
+            "iconURL": "",
+            "SkillName": "Expo"
+          }
+        ]
+      },
+      {
+        "Area": "Version control",
+        "SkillSet": [
+          {
+            "iconURL": "",
+            "SkillName": "Github"
+          },
+          {
+            "iconURL": "",
+            "SkillName": "Gitlab"
+          }
+        ]
+      },
+      {
+        "Area": "IDE",
+        "SkillSet": [
+          {
+            "iconURL": "",
+            "SkillName": "VS Code"
+          }
+        ]
+      },
+      {
+        "Area": "Design tools",
+        "SkillSet": [
+          {
+            "iconURL": "",
+            "SkillName": "Figma"
+          },
+          {
+            "iconURL": "",
+            "SkillName": "Sketch"
+          }
+        ]
+      },
+      {
+        "Area": "Collabration tools",
+        "SkillSet": [
+          {
+            "iconURL": "",
+            "SkillName": "Zeplin"
+          },
+          {
+            "iconURL": "",
+            "SkillName": "Invision"
+          }
+        ]
+      }
+    ]
+  }
+]

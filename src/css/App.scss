@@ -1,0 +1,283 @@
+//css variables
+
+//Color codes
+$body-bg: #f2f6ff;
+$white: #fff;
+$black: #000;
+
+$primary_color: #2150d6;
+$primary_color_ultra_light: #2151d633;
+$primary_text: #5f6a85;
+$vr: ".vr";
+$vri: ".vri";
+
+body {
+  padding: 0;
+  background-color: $body-bg;
+  height: 100%;
+}
+p {
+  margin: 0;
+}
+main {
+  padding: 0 162px;
+  color: $primary_text;
+  flex: 4;
+  overflow: scroll;
+}
+@font-face {
+  font-family: "vri";
+  src: url(../images/font.woff) format("woff");
+}
+[class*="vri"],
+[class^="vri"] {
+  font-family: "vri";
+  display: inline-block;
+  font-style: normal;
+}
+
+#{$vri}-mail:before {
+  content: "\e900";
+}
+#{$vri}-linkedin:before {
+  content: "\e901";
+}
+#{$vri}-insta:before {
+  content: "\e902";
+}
+#{$vri}-github:before {
+  content: "\e903";
+}
+
+#{$vr} {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 20px);
+  overflow: hidden;
+}
+#{$vr}-header {
+  display: flex;
+  background-color: $white;
+  height: 52px;
+  border-radius: 6px;
+  align-items: center;
+  margin: 10px 10px 0 10px;
+  &__icon {
+    background-color: $primary_color;
+    color: $white;
+    height: 32px;
+    width: 32px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    margin-left: 10px;
+  }
+  &-nav {
+    margin-left: 30px;
+    &__item {
+      margin: 0 40px 0 0;
+      text-decoration: none;
+      color: $primary_text;
+      transition: color 0.3s ease;
+      &:hover {
+        color: $primary_color;
+      }
+    }
+  }
+  &-public-profile {
+    margin-left: auto;
+    display: flex;
+  }
+}
+#{$vr}-about {
+  &__hello {
+    margin-top: 90px;
+  }
+  &__name {
+    margin-top: 30px;
+  }
+  &__desc {
+    margin-top: 40px;
+  }
+  &__button {
+    margin-top: 40px;
+  }
+}
+#{$vr}-skills {
+  margin-top: 100px;
+  &-cat-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-cat-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    flex: 1;
+  }
+  &-list {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  &-item {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    &:first-child {
+      margin-top: 0;
+    }
+    &__icon {
+      width: 48px;
+      height: 48px;
+      background-color: $white;
+      box-shadow: 0 0 4px #ddd;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 30px;
+      }
+    }
+    &__desc {
+      margin-left: 20px;
+    }
+  }
+}
+#{$vr}-experience {
+  margin-top: 100px;
+  &-organization {
+    margin-top: 50px;
+    &-details {
+      &__logo {
+        height: 32px;
+        margin: 0;
+      }
+      &-role-name-wra {
+        margin-top: 30px;
+        display: flex;
+        font-weight: 600;
+        font-size: 16px;
+      }
+      &__role {
+        margin: 0;
+      }
+      &__name {
+        margin: 0;
+      }
+      &-duration-wra {
+        margin-top: 10px;
+        display: flex;
+      }
+      &__timeduration {
+        margin: 0;
+      }
+      &__timeperiod {
+        margin: 0;
+      }
+    }
+    &-responsibility {
+      margin-top: 30px;
+      padding: 0 0 0 15px;
+      li {
+        margin-top: 10px;
+      }
+    }
+    &-projects {
+      margin-top: 60px;
+      &-item {
+        margin-top: 40px;
+        &:first-child {
+          margin-top: 0;
+        }
+        &-header {
+          display: flex;
+        }
+        &__logo {
+          height: 48px;
+          width: 48px;
+          border-radius: 6px;
+          background-color: $white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 20px;
+          box-shadow: 0 0 4px #ddd;
+          img {
+            height: 30px;
+          }
+        }
+        &-title-wra {
+        }
+        &__title {
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+        &__url {
+          color: $primary_text;
+          &:visited,
+          &:hover,
+          &:active {
+            color: $primary_text;
+          }
+        }
+        &__desc {
+          margin-top: 20px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
+
+#{$vr}-icon-button {
+  height: 26px;
+  width: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: color, background-color 0.3s ease;
+  background-color: $white;
+  color: $primary_text;
+
+  &:hover {
+    color: $primary_color;
+    cursor: pointer;
+    background-color: $primary_color_ultra_light;
+  }
+}
+#{$vr}-primary-button {
+  padding: 10px 20px;
+  background-color: $primary_color;
+  border: none;
+  color: $white;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#{$vr}-title {
+  &--lg {
+    font-size: 42px;
+  }
+  &--md {
+    font-size: 36px;
+  }
+  &--sm {
+    font-size: 22px;
+  }
+  &--xs {
+    font-size: 18px;
+  }
+}
+#{$vr}-desc {
+  font-size: 16px;
+  line-height: 1.8;
+}
