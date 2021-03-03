@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import icon_html from "../src/images/html.svg";
 import icon_css from "../src/images/css.svg";
 import icon_javaScript from "../src/images/javascript.svg";
-import icon_sassy from "../src/images/sass.jpg";
+import icon_sassy from "../src/images/sass.svg";
 import icon_react from "../src/images/react.svg";
 import icon_expo from "../src/images/expo.svg";
 
