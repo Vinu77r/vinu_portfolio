@@ -1,8 +1,12 @@
 import logo from "./logo.svg";
 import "../src/css/App.scss";
-import { render } from "@testing-library/react";
+import Vinu_resume_pdf from "../src/files/vinu_resume.pdf";
+//import { render } from "@testing-library/react";
 import user from "../src/user.json";
-import React, { useState } from "react";
+//import React, { useState } from "react";
+
+//mail click
+import { Link } from "react-router-dom";
 
 import icon_html from "../src/images/html.svg";
 import icon_css from "../src/images/css.svg";
@@ -48,6 +52,10 @@ function App() {
     </div>
   );
 }
+const open_in_Newtab = (url) => {
+  const newWindow = window.open(url, "_blank");
+  if (newWindow) newWindow.opener = null;
+};
 
 function Header_nav() {
   return (
@@ -65,26 +73,33 @@ function Header_nav() {
         </a>
       </nav>
       <div className="vr-header-public-profile">
-        <button className="vr-icon-button">
+        <button
+          className="vr-icon-button"
+          onClick={() => open_in_Newtab("https://github.com/Vinu77r")}
+        >
           <i className="vri-github"></i>
         </button>
-        <button className="vr-icon-button">
+        <button
+          className="vr-icon-button"
+          onClick={() => open_in_Newtab("https://www.linkedin.com/in/vr77/")}
+        >
           <i className="vri-linkedin"></i>
         </button>
-        <button className="vr-icon-button">
+        <button
+          className="vr-icon-button"
+          onClick={() => open_in_Newtab("https://www.instagram.com/__vr77__")}
+        >
           <i className="vri-insta"></i>
-        </button>
-        <button className="vr-icon-button">
-          <i className="vri-mail"></i>
         </button>
       </div>
     </header>
   );
 }
+
 function About() {
   const about = {
     title: "Hello",
-    userName: "Vinu",
+    userName: " I am  Vinu",
     jobTitle: "UI Engineer",
     aboutUser:
       "I'm a UI Engineer with 4+ years of experience who loves design, code, and coffee. I have a passion for crafting human-computer interaction and believe in building easy-to-maintain websites/apps by breaking them down into its smallest components. ",
@@ -96,7 +111,11 @@ function About() {
         {about.userName} - {about.jobTitle}
       </p>
       <p className="vr-desc vr-about__desc">{about.aboutUser}</p>
-      <button className="vr-primary-button vr-about__button">Get resume</button>
+      <a href={Vinu_resume_pdf} download="My_File.pdf">
+        <button className="vr-primary-button vr-about__button">
+          Get resume
+        </button>
+      </a>
     </div>
   );
 }
