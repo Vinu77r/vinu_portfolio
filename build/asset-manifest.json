@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.1cd9c6cb.chunk.css",
-    "main.js": "/static/js/main.e89cc3ac.chunk.js",
-    "main.js.map": "/static/js/main.e89cc3ac.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.01847fa6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.01847fa6.js.map",
-    "static/js/2.ecb5a62b.chunk.js": "/static/js/2.ecb5a62b.chunk.js",
-    "static/js/2.ecb5a62b.chunk.js.map": "/static/js/2.ecb5a62b.chunk.js.map",
-    "static/js/3.0ccaab4d.chunk.js": "/static/js/3.0ccaab4d.chunk.js",
-    "static/js/3.0ccaab4d.chunk.js.map": "/static/js/3.0ccaab4d.chunk.js.map",
+    "main.js": "/static/js/main.dc19c502.chunk.js",
+    "main.js.map": "/static/js/main.dc19c502.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cc2ebe48.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cc2ebe48.js.map",
+    "static/js/2.a2acceb0.chunk.js": "/static/js/2.a2acceb0.chunk.js",
+    "static/js/2.a2acceb0.chunk.js.map": "/static/js/2.a2acceb0.chunk.js.map",
+    "static/js/3.988bee62.chunk.js": "/static/js/3.988bee62.chunk.js",
+    "static/js/3.988bee62.chunk.js.map": "/static/js/3.988bee62.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.1cd9c6cb.chunk.css.map": "/static/css/main.1cd9c6cb.chunk.css.map",
-    "static/js/2.ecb5a62b.chunk.js.LICENSE.txt": "/static/js/2.ecb5a62b.chunk.js.LICENSE.txt",
+    "static/js/2.a2acceb0.chunk.js.LICENSE.txt": "/static/js/2.a2acceb0.chunk.js.LICENSE.txt",
     "static/media/008.4b57c827.svg": "/static/media/008.4b57c827.svg",
     "static/media/css.03dd0ae7.svg": "/static/media/css.03dd0ae7.svg",
     "static/media/expo.2161db51.svg": "/static/media/expo.2161db51.svg",
@@ -27,15 +27,16 @@
     "static/media/react.cbfee7f8.svg": "/static/media/react.cbfee7f8.svg",
     "static/media/sketch.50ac4d5b.svg": "/static/media/sketch.50ac4d5b.svg",
     "static/media/sutherland.8b3da9b2.svg": "/static/media/sutherland.8b3da9b2.svg",
+    "static/media/vinu_resume.a7afd397.pdf": "/static/media/vinu_resume.a7afd397.pdf",
     "static/media/vs.0528fd97.svg": "/static/media/vs.0528fd97.svg",
     "static/media/workplace.73a00b5d.svg": "/static/media/workplace.73a00b5d.svg",
     "static/media/zeplin.9d5e7afa.svg": "/static/media/zeplin.9d5e7afa.svg",
     "static/media/zoho.0d5bd9f0.svg": "/static/media/zoho.0d5bd9f0.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.01847fa6.js",
-    "static/js/2.ecb5a62b.chunk.js",
+    "static/js/runtime-main.cc2ebe48.js",
+    "static/js/2.a2acceb0.chunk.js",
     "static/css/main.1cd9c6cb.chunk.css",
-    "static/js/main.e89cc3ac.chunk.js"
+    "static/js/main.dc19c502.chunk.js"
   ]
 }
