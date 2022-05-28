@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "../src/css/App.scss";
-import Vinu_resume_pdf from "../src/files/vinu_resume.pdf";
+import Vinu_resume_pdf from "../src/files/resume.pdf";
 //import { render } from "@testing-library/react";
 import user from "../src/user.json";
 //import React, { useState } from "react";
