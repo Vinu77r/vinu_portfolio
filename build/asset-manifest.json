@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.1cd9c6cb.chunk.css",
-    "main.js": "/static/js/main.88410942.chunk.js",
-    "main.js.map": "/static/js/main.88410942.chunk.js.map",
+    "main.js": "/static/js/main.63d7aadf.chunk.js",
+    "main.js.map": "/static/js/main.63d7aadf.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cc2ebe48.js",
     "runtime-main.js.map": "/static/js/runtime-main.cc2ebe48.js.map",
     "static/js/2.a2acceb0.chunk.js": "/static/js/2.a2acceb0.chunk.js",
@@ -25,10 +25,10 @@
     "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg",
     "static/media/mail.76716184.svg": "/static/media/mail.76716184.svg",
     "static/media/react.cbfee7f8.svg": "/static/media/react.cbfee7f8.svg",
+    "static/media/resume.67db6f64.pdf": "/static/media/resume.67db6f64.pdf",
     "static/media/sass.b1f1d842.svg": "/static/media/sass.b1f1d842.svg",
     "static/media/sketch.50ac4d5b.svg": "/static/media/sketch.50ac4d5b.svg",
     "static/media/sutherland.8b3da9b2.svg": "/static/media/sutherland.8b3da9b2.svg",
-    "static/media/vinu_resume.a7afd397.pdf": "/static/media/vinu_resume.a7afd397.pdf",
     "static/media/vs.0528fd97.svg": "/static/media/vs.0528fd97.svg",
     "static/media/workplace.73a00b5d.svg": "/static/media/workplace.73a00b5d.svg",
     "static/media/zeplin.9d5e7afa.svg": "/static/media/zeplin.9d5e7afa.svg",
@@ -38,6 +38,6 @@
     "static/js/runtime-main.cc2ebe48.js",
     "static/js/2.a2acceb0.chunk.js",
     "static/css/main.1cd9c6cb.chunk.css",
-    "static/js/main.88410942.chunk.js"
+    "static/js/main.63d7aadf.chunk.js"
   ]
 }
