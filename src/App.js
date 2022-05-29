@@ -111,10 +111,10 @@ function Header_nav() {
         </button>
       </div>
       <button
-        className="pf-icon-button pf-icon-button--lg pf-header-nav-ham-icon"
+        className="pf-header-nav-ham-icon"
         onClick={ham_click}
       >
-        <BiMenu size={40} />
+        <BiMenu size={26} />
       </button>
       <div className="pf-header-nav-ham-list" id="ham_list">
         <ScrollIntoView
@@ -538,7 +538,7 @@ function Products() {
     <section className="pf-uc" id="products">
       <h1>Products</h1>
       <div>
-        <h2>Under Construction</h2>
+        <h2>Section Under Construction</h2>
         <img className="pf-uc-image" src={under_construction} />
       </div>
     </section>

@@ -37,8 +37,15 @@
       &-icon {
         color: #{$appTextcolor};
         display: none !important;
+        background-color: #{$appHeader};
+        color: #{$appTextcolor};
+        border: none;
+        margin-right: 10px;
+        border-radius: 4px;
         &:hover {
+          color: #{$appHeaderitemhoverclr};
           cursor: pointer;
+          background-color: $primary_color_ultra_light;
         }
       }
       &-list {
