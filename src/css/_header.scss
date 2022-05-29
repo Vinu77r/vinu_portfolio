@@ -1,0 +1,76 @@
+#{$pf}-header {
+  display: flex;
+  background-color: #{$appHeader};
+  height: 52px;
+  border-radius: 6px;
+  align-items: center;
+  margin: 10px 10px 0 10px;
+  position: relative;
+  &__logo {
+    background-color: $primary_color;
+    color: $white;
+    height: 32px;
+    width: 32px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    margin-left: 10px;
+  }
+  &-nav {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    &__item {
+      margin: 0 40px 0 0;
+      text-decoration: none;
+      color: #{$appTextcolor};
+      transition: color 0.3s ease;
+      &:hover {
+        color: #{$appHeaderitemhoverclr};
+        cursor: pointer;
+        text-shadow: 0 0 1px #{$appHeaderitemhoverclr};
+      }
+    }
+    &-ham {
+      &-icon {
+        color: #{$appTextcolor};
+        display: none !important;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      &-list {
+        position: absolute;
+        width: 100%;
+        background-color: #{$appHeader};
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        border-radius: 4px;
+        display: none;
+        &-item {
+          color: #{$appTextcolor};
+          display: flex;
+          justify-content: end;
+          padding: 10px 20px;
+          &:hover {
+            cursor: pointer;
+            &:hover {
+              background-color: #{$primary_color_ultra_light};
+            }
+          }
+        }
+        &-show {
+          display: flex;
+        }
+      }
+    }
+  }
+  &-socialprofile {
+    margin-left: auto;
+    display: flex;
+  }
+}

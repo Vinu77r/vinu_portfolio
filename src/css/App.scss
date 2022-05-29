@@ -1,30 +1,28 @@
-//css variables
-
-//Color codes
-$body-bg: #f2f6ff;
-$white: #fff;
-$black: #000;
-
-$primary_color: #2150d6;
-$primary_color_ultra_light: #2151d633;
-$primary_text: #5f6a85;
-$vr: ".vr";
-$vri: ".vri";
-
+@import "var"; // variables import
+@import "header";
+@import "theme";
 @media only screen and (max-width: 600px) {
   main {
     padding: 40px !important;
   }
-  #{$vr}-header {
+  #{$pf}-header {
     &-nav {
       display: none;
+      &-ham {
+        &-icon {
+          display: inline-flex !important;
+        }
+      }
     }
   }
 }
 
+* {
+  scroll-margin-top: 50px;
+}
 body {
   padding: 0;
-  background-color: $body-bg;
+  background-color: #{$appBg};
   height: 100%;
 }
 p {
@@ -32,78 +30,42 @@ p {
 }
 main {
   padding: 0 162px;
-  color: $primary_text;
+  color: #{$appTextcolor};
   flex: 4;
   overflow: scroll;
 }
 @font-face {
-  font-family: "vri";
+  font-family: "pfi";
   src: url(../images/font.woff) format("woff");
 }
-[class*="vri"],
-[class^="vri"] {
-  font-family: "vri";
+[class*="pfi"],
+[class^="pfi"] {
+  font-family: "pfi";
   display: inline-block;
   font-style: normal;
 }
 
-#{$vri}-mail:before {
+#{$pfi}-mail:before {
   content: "\e900";
 }
-#{$vri}-linkedin:before {
+#{$pfi}-linkedin:before {
   content: "\e901";
 }
-#{$vri}-insta:before {
+#{$pfi}-insta:before {
   content: "\e902";
 }
-#{$vri}-github:before {
+#{$pfi}-github:before {
   content: "\e903";
 }
 
-#{$vr} {
+#{$pf} {
   font-size: 14px;
   display: flex;
   flex-direction: column;
   height: calc(100vh - 20px);
   overflow: hidden;
 }
-#{$vr}-header {
-  display: flex;
-  background-color: $white;
-  height: 52px;
-  border-radius: 6px;
-  align-items: center;
-  margin: 10px 10px 0 10px;
-  &__icon {
-    background-color: $primary_color;
-    color: $white;
-    height: 32px;
-    width: 32px;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3px;
-    margin-left: 10px;
-  }
-  &-nav {
-    margin-left: 30px;
-    &__item {
-      margin: 0 40px 0 0;
-      text-decoration: none;
-      color: $primary_text;
-      transition: color 0.3s ease;
-      &:hover {
-        color: $primary_color;
-      }
-    }
-  }
-  &-public-profile {
-    margin-left: auto;
-    display: flex;
-  }
-}
-#{$vr}-about {
+#{$pf}-about {
   &__hello {
     margin-top: 90px;
   }
@@ -117,7 +79,7 @@ main {
     margin-top: 40px;
   }
 }
-#{$vr}-skills {
+#{$pf}-skills {
   margin-top: 100px;
   &-cat-list {
     display: flex;
@@ -126,7 +88,7 @@ main {
   &-cat-item {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-right: 70px;
     flex: 1;
   }
@@ -145,7 +107,7 @@ main {
     &__icon {
       width: 48px;
       height: 48px;
-      background-color: $white;
+      background-color: #{$appSkilliconbg};
       box-shadow: 0 0 4px #ddd;
       border-radius: 8px;
       display: flex;
@@ -160,7 +122,7 @@ main {
     }
   }
 }
-#{$vr}-experience {
+#{$pf}-experience {
   margin-top: 100px;
   &-organization {
     margin-top: 50px;
@@ -213,7 +175,7 @@ main {
           height: 48px;
           width: 48px;
           border-radius: 6px;
-          background-color: $white;
+          background-color: #{$appSkilliconbg};
           display: flex;
           align-items: center;
           justify-content: center;
@@ -230,11 +192,11 @@ main {
           margin-bottom: 10px;
         }
         &__url {
-          color: $primary_text;
+          color: #{$appTextcolor};
           &:visited,
           &:hover,
           &:active {
-            color: $primary_text;
+            color: #{$appTextcolor};
           }
         }
         &__desc {
@@ -246,7 +208,7 @@ main {
   }
 }
 
-#{$vr}-icon-button {
+#{$pf}-icon-button {
   height: 26px;
   width: 26px;
   display: flex;
@@ -257,16 +219,21 @@ main {
   border-radius: 4px;
   font-size: 14px;
   transition: color, background-color 0.3s ease;
-  background-color: $white;
-  color: $primary_text;
+  background-color: #{$appHeader};
+  color: #{$appTextcolor};
 
   &:hover {
-    color: $primary_color;
+    color: #{$appHeaderitemhoverclr};
     cursor: pointer;
     background-color: $primary_color_ultra_light;
   }
+  &--lg {
+    height: 36px;
+    width: 36px;
+    font-size: 16px;
+  }
 }
-#{$vr}-primary-button {
+#{$pf}-primary-button {
   padding: 10px 20px;
   background-color: $primary_color;
   border: none;
@@ -275,7 +242,7 @@ main {
   font-size: 14px;
 }
 
-#{$vr}-title {
+#{$pf}-title {
   &--lg {
     font-size: 42px;
   }
@@ -289,7 +256,14 @@ main {
     font-size: 18px;
   }
 }
-#{$vr}-desc {
+#{$pf}-desc {
   font-size: 16px;
   line-height: 1.8;
+}
+#{$pf}-uc {
+  margin-top: 100px;
+  &-image {
+    margin-top: 100px;
+    width: 100%;
+  }
 }

@@ -1,0 +1,35 @@
+//Color codes
+$white: #fff;
+$black: #000;
+
+$primary_color: #1317ce;
+$primary_color_ultra_light: #1316ce37;
+
+$pf: ".pf";
+$pfi: ".pfi";
+
+//light theme colors
+$light_bg: #f2f6ff;
+$light_header: #ffffff;
+$light_header_hover_clr: #{$primary_color};
+$light_textColor: #5f6a85;
+$light_skilsIcon: #fff;
+
+//dark theme colors
+$dark_bg: #071029;
+$dark_header: #192547;
+$dark_header_hover_clr: #ffffff;
+$dark_textColor: #fff;
+$dark_skilsIcon: #192547;
+
+//css variables
+
+$appBg: var(--app-bg, #{$light_bg});
+$appHeader: var(--app-header-bg, #{$light_header});
+$appHeaderitemhoverclr: var(
+  --app-header-item-hover-clr,
+  #{$light_header_hover_clr}
+);
+$appTextcolor: var(--app-text-color, #{$light_textColor});
+$appThemecolor: var(--app-theme-color, #{$primary_color});
+$appSkilliconbg: var(--app-skill-icon-bg, #{$light_skilsIcon});

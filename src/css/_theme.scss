@@ -1,0 +1,22 @@
+:root {
+  --app-theme-color: #{$primary_color};
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --app-bg: #{$dark_bg};
+    --app-header-bg: #{$dark_header};
+    --app-text-color: #{$dark_textColor};
+    --app-skill-icon-bg: #{$dark_skilsIcon};
+    --app-header-item-hover-clr: #{$dark_header_hover_clr};
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --app-bg: #{$light_bg};
+    --app-header-bg: #{$light_header};
+    --app-text-color: #{$light_textColor};
+    --app-skill-icon-bg: #{$light_skilsIcon};
+    --app-header-item-hover-clr: #{$light_header_hover_clr};
+  }
+}
