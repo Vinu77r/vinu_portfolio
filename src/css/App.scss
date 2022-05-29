@@ -1,25 +1,11 @@
 @import "var"; // variables import
 @import "header";
 @import "theme";
-@media only screen and (max-width: 600px) {
-  main {
-    padding: 40px !important;
-  }
-  #{$pf}-header {
-    &-nav {
-      display: none;
-      &-ham {
-        &-icon {
-          display: inline-flex !important;
-        }
-      }
-    }
-  }
-}
 
 * {
-  scroll-margin-top: 50px;
+  scroll-margin-top: 120px;
 }
+
 body {
   padding: 0;
   background-color: #{$appBg};
@@ -29,10 +15,10 @@ p {
   margin: 0;
 }
 main {
-  padding: 0 162px;
   color: #{$appTextcolor};
   flex: 4;
   overflow: scroll;
+  padding: 0 12em;
 }
 @font-face {
   font-family: "pfi";
@@ -58,13 +44,6 @@ main {
   content: "\e903";
 }
 
-#{$pf} {
-  font-size: 14px;
-  display: flex;
-  flex-direction: column;
-  height: calc(100vh - 20px);
-  overflow: hidden;
-}
 #{$pf}-about {
   &__hello {
     margin-top: 90px;
@@ -185,8 +164,6 @@ main {
             height: 30px;
           }
         }
-        &-title-wra {
-        }
         &__title {
           font-weight: 600;
           margin-bottom: 10px;
@@ -216,7 +193,7 @@ main {
   justify-content: center;
   margin-right: 20px;
   border: none;
-
+  border-radius: 4px;
   font-size: 14px;
   transition: color, background-color 0.3s ease;
   background-color: #{$appHeader};
@@ -265,5 +242,20 @@ main {
   &-image {
     margin-top: 100px;
     width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 0 2em;
+  }
+  #{$pf}-header {
+    &-nav {
+      display: none;
+      &-ham {
+        &-icon {
+          display: inline-flex !important;
+        }
+      }
+    }
   }
 }

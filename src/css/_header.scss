@@ -4,8 +4,10 @@
   height: 52px;
   border-radius: 6px;
   align-items: center;
-  margin: 10px 10px 0 10px;
-  position: relative;
+  margin: 10px;
+  position: sticky;
+  top: 10px;
+  padding: 0 10px;
   &__logo {
     background-color: $primary_color;
     color: $white;
@@ -52,12 +54,13 @@
         position: absolute;
         width: 100%;
         background-color: #{$appHeader};
-        top: 60px;
+        top: 70px;
         display: flex;
         flex-direction: column;
         align-items: stretch;
         border-radius: 4px;
         display: none;
+        left: 0;
         &-item {
           color: #{$appTextcolor};
           display: flex;
